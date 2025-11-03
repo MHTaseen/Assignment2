@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Mahmudul Hassan Taseen</div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="fortune.html" class="nav-link">Fortune Generator</a>
+                </li>
+                <li class="nav-item">
+                    <a href="stopwatch.html" class="nav-link active">Stopwatch</a>
+                </li>
+                <li class="nav-item">
+                    <a href="todo.html" class="nav-link">To-Do List</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="page-header">
+            <img src="https://thumbs.dreamstime.com/b/sleek-modern-stopwatch-subtle-reflection-playing-cards-its-surface-combining-time-game-elements-stylish-350310853.jpg" alt="Stopwatch" class="page-icon">
+            <h1>Stopwatch</h1>
+            <p>Counts in 3-second increments, stops automatically at 30 seconds</p>
+        </div>
+
+        <div class="section">
+            <div class="stopwatch-container">
+                <div id="stopwatch-display">00:00</div>
+                <div class="stopwatch-controls">
+                    <button id="start-btn" class="stopwatch-btn">Start</button>
+                    <button id="stop-btn" class="stopwatch-btn" disabled>Stop</button>
+                    <button id="reset-btn" class="stopwatch-btn">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="page-footer">
+        <p>&copy; 2025 Mahmudul Hassan Taseen| All rights reserved.</p>
+    </footer>
+
+    <script src="stopwatch.js"></script>
+</body>
+</html>
