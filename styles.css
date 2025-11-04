@@ -513,4 +513,60 @@ footer {
 .card-container:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+
+}
+
+
+/* Fortune Box Styling */
+#fortune-box {
+    background-color: #fff3cd;
+    color: #856404;
+    border: 4px solid #ffc107;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 600px;
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 20px;
+    line-height: 1.6;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Fortune Buttons */
+.fortune-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.fortune-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.fortune-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
