@@ -59,4 +59,37 @@ resetBtn.addEventListener('click', function() {
     console.log('Stopwatch reset to 00:00');
 });
 
+
 console.log('Stopwatch initialized ✓');
+
+
+
+
+
+
+
+resetBtn.addEventListener('click', function() {
+    clearInterval(timerInterval);
+    timerInterval = null;
+    seconds = 0;
+    updateDisplay();
+    
+    // Automatically start the stopwatch after reset
+    timerInterval = setInterval(function() {
+        seconds += 3;
+        updateDisplay();
+        
+        if (seconds >= 30) {
+            clearInterval(timerInterval);
+            timerInterval = null;
+            startBtn.disabled = true;
+            stopBtn.disabled = true;
+            console.log('Stopwatch reached 30 seconds and stopped automatically.');
+        }
+    }, 1000);
+    
+    // Update button states
+    startBtn.disabled = true;
+    stopBtn.disabled = false;
+    console.log('Stopwatch reset to 00:00 and started');
+});
