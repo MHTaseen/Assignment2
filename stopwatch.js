@@ -49,32 +49,32 @@ stopBtn.addEventListener('click', function() {
     }
 });
 
+// resetBtn.addEventListener('click', function() {
+//     clearInterval(timerInterval);
+//     timerInterval = null;
+//     seconds = 0;
+//     updateDisplay();
+//     startBtn.disabled = false;
+//     stopBtn.disabled = true;
+//     console.log('Stopwatch reset to 00:00');
+// });
+
+
+// console.log('Stopwatch initialized ✓');
+
+
+
+
+
+
+
 resetBtn.addEventListener('click', function() {
     clearInterval(timerInterval);
     timerInterval = null;
     seconds = 0;
     updateDisplay();
-    startBtn.disabled = false;
-    stopBtn.disabled = true;
-    console.log('Stopwatch reset to 00:00');
-});
 
-
-console.log('Stopwatch initialized ✓');
-
-
-
-
-
-
-
-resetBtn.addEventListener('click', function() {
-    clearInterval(timerInterval);
-    timerInterval = null;
-    seconds = 0;
-    updateDisplay();
     
-    // Automatically start the stopwatch after reset
     timerInterval = setInterval(function() {
         seconds += 3;
         updateDisplay();
@@ -93,3 +93,4 @@ resetBtn.addEventListener('click', function() {
     stopBtn.disabled = false;
     console.log('Stopwatch reset to 00:00 and started');
 });
+
