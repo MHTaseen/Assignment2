@@ -73,8 +73,9 @@ resetBtn.addEventListener('click', function() {
     timerInterval = null;
     seconds = 0;
     updateDisplay();
-
+    console.log('Stopwatch reset to 00:00');
     
+    // Automatically start the timer
     timerInterval = setInterval(function() {
         seconds += 3;
         updateDisplay();
@@ -88,9 +89,9 @@ resetBtn.addEventListener('click', function() {
         }
     }, 1000);
     
-    // Update button states
     startBtn.disabled = true;
     stopBtn.disabled = false;
-    console.log('Stopwatch reset to 00:00 and started');
+    console.log('Stopwatch started automatically');
 });
+
 
